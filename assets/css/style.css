@@ -2,17 +2,20 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   background-image: url("../img/background.jpg");
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  margin: 0; }
 
 #currentTime {
   color: #fff;
   font-family: "Anton", sans-serif;
   font-size: 3.7em;
+  text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.75);
   padding: 15px;
   margin: 30vh auto 10vh;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 350px;
+  height: 116px;
   text-align: center;
   box-sizing: border-box; }
 
@@ -33,5 +36,20 @@ body {
     width: 80%;
     box-sizing: border-box;
     outline: 0; }
+
+.github-repositories {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 15px;
+  position: absolute;
+  bottom: 0; }
+  .github-repositories .repo {
+    flex: 0 0 19%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: calc(15px / 2) 0;
+    box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

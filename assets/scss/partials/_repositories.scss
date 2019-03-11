@@ -1,0 +1,17 @@
+.github-repositories {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: $padding;
+    position: absolute;
+    bottom: 0;
+
+    .repo {
+        flex: 0 0 19%;
+        background-color: $primaryColor;
+        border-radius: $borderRadius;
+        padding: $padding;
+        margin: calc(#{$margin} / 2) 0;
+        box-sizing: border-box
+    }
+}

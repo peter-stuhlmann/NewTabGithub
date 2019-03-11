@@ -1,17 +1,20 @@
 body {
     background-image: url('../img/background.jpg');
-    font-family: $primaryFont
+    font-family: $primaryFont;
+    margin: 0
 }
 
 #currentTime {
     color: $primaryColor;
     font-family: $secondaryFont;
     font-size: 3.7em;
+    text-shadow: $textShadow;
     padding: $padding;
     margin: 30vh auto 10vh;
     border-radius: $borderRadius;
     background-color: $tertiaryColor;
     width: 350px;
+    height: 116px;
     text-align: center;
     box-sizing: border-box
 }

@@ -9,11 +9,29 @@ body {
   font-family: "Anton", sans-serif;
   font-size: 3.7em;
   padding: 15px;
-  margin: 30vh auto;
+  margin: 30vh auto 10vh;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 350px;
   text-align: center;
   box-sizing: border-box; }
+
+.input {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto; }
+  .input .fa-github {
+    margin: 0 15px;
+    vertical-align: middle;
+    font-size: 2em;
+    max-width: calc(15px * 3); }
+  .input input {
+    padding: 15px;
+    background-color: transparent;
+    border: 0;
+    width: 80%;
+    box-sizing: border-box;
+    outline: 0; }
 
 /*# sourceMappingURL=style.css.map */

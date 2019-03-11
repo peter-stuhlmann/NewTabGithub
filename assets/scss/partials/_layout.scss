@@ -8,10 +8,33 @@ body {
     font-family: $secondaryFont;
     font-size: 3.7em;
     padding: $padding;
-    margin: 30vh auto;
+    margin: 30vh auto 10vh;
     border-radius: $borderRadius;
     background-color: $tertiaryColor;
     width: 350px;
     text-align: center;
     box-sizing: border-box
+}
+
+.input {
+    background-color: $primaryColor;
+    border-radius: $borderRadius;
+    width: 400px;
+    margin: 0 auto;
+
+    .fa-github {
+        margin: 0 $margin;
+        vertical-align: middle;
+        font-size: 2em;
+        max-width: calc(#{$margin} * 3)
+    }
+    
+    input {
+        padding: $padding;
+        background-color: transparent;
+        border: 0;
+        width: 80%;
+        box-sizing: border-box;
+        outline: 0
+    }
 }

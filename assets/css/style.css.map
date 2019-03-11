@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/partials/_variables.scss",
+		"../scss/partials/_layout.scss"
+	],
+	"sourcesContent": [
+		"@import \"partials/variables\";\n@import \"partials/layout\";",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}

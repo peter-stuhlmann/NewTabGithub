@@ -7,10 +7,10 @@
 		"../scss/partials/_layout.scss"
 	],
 	"sourcesContent": [
-		"@import \"partials/variables\";\n@import \"partials/layout\";",
-		"",
-		""
+		"@import url('https://fonts.googleapis.com/css?family=Anton');\n@import url('https://fonts.googleapis.com/css?family=Open+Sans');\n\n@import \"partials/variables\";\n@import \"partials/layout\";",
+		"$primaryColor: #fff;\n$secondaryColor: #000;\n$tertiaryColor: rgba(0, 0, 0, 0.7);\n\n$primaryFont: 'Open Sans', sans-serif;\n$secondaryFont: 'Anton', sans-serif;\n\n$borderRadius: 5px;\n\n$textShadow: 5px 3px 6px rgba(0, 0, 0, 0.75);\n    \n$padding: 15px;\n$margin: $padding;\n\n$desktop: 1170px;\n$tablet: 670px;",
+		"body {\n    background-image: url('../img/background.jpg');\n    font-family: $primaryFont\n}\n\n#currentTime {\n    color: $primaryColor;\n    font-family: $secondaryFont;\n    font-size: 3.7em;\n    padding: $padding;\n    margin: 30vh auto;\n    border-radius: $borderRadius;\n    background-color: $tertiaryColor;\n    width: 350px;\n    text-align: center;\n    box-sizing: border-box\n}"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": "AAAA,OAAO,CAAC,oDAAI;AACZ,OAAO,CAAC,wDAAI;AEDZ,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,4BAA4B;EAC9C,WAAW,EDED,WAAW,EAAE,UAAU,GCDpC;;AAED,AAAA,YAAY,CAAC;EACT,KAAK,EDNM,IAAI;ECOf,WAAW,EDFC,OAAO,EAAE,UAAU;ECG/B,SAAS,EAAE,KAAK;EAChB,OAAO,EDED,IAAI;ECDV,MAAM,EAAE,SAAS;EACjB,aAAa,EDJF,GAAG;ECKd,gBAAgB,EDVJ,kBAAkB;ECW9B,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,UAChB,GAAC"
 }

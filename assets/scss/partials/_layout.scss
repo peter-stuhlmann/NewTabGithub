@@ -1,0 +1,17 @@
+body {
+    background-image: url('../img/background.jpg');
+    font-family: $primaryFont
+}
+
+#currentTime {
+    color: $primaryColor;
+    font-family: $secondaryFont;
+    font-size: 3.7em;
+    padding: $padding;
+    margin: 30vh auto;
+    border-radius: $borderRadius;
+    background-color: $tertiaryColor;
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box
+}

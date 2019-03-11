@@ -1,2 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  background-image: url("../img/background.jpg");
+  font-family: "Open Sans", sans-serif; }
+
+#currentTime {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 3.7em;
+  padding: 15px;
+  margin: 30vh auto;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 350px;
+  text-align: center;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

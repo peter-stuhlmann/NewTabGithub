@@ -1,7 +1,7 @@
 let interval = 1000;
 
 setInterval(function () {
-    let currentTime = moment().format('LTS')
+    let currentTime = moment().format('HH:mm:ss')
     document.querySelector("#currentTime").innerHTML = currentTime
 }, interval);
 

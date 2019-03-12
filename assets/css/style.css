@@ -12,12 +12,11 @@ body {
 #currentTime {
   color: #fff;
   font-family: "Anton", sans-serif;
-  font-size: 3.7em;
+  font-size: 5.5em;
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.75);
   padding: 15px;
   margin: 30vh auto 10vh;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.7);
   width: 350px;
   height: 116px;
   text-align: center;

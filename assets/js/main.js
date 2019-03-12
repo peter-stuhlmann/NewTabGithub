@@ -27,7 +27,6 @@ class github {
     }
 
     update(data) {
-        console.log(data)
         this.data = data
         this.viewData = data
         this.template()

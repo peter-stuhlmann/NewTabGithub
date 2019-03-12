@@ -90,9 +90,6 @@ body {
   padding: 15px;
   text-align: right; }
 
-.settings-toggle:focus {
-  outline: 0; }
-
 .settings {
   position: absolute;
   right: -400px;
@@ -101,23 +98,48 @@ body {
   width: 400px;
   transition: right 0.3s ease;
   z-index: 20;
-  background-color: #fff; }
-
-.settings:target {
-  right: 0;
-  outline: 0;
-  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25); }
-
-.settings:target + .backdrop {
-  position: absolute;
-  display: block;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 15;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: #fff;
+  padding: calc(15px * 2) 15px;
+  box-sizing: border-box; }
+  .settings:target {
+    right: 0;
+    outline: 0;
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25); }
+    .settings:target + .backdrop {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 15;
+      background-color: rgba(0, 0, 0, 0.8); }
+  .settings .username-input {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .settings .username-input span {
+      flex: 0 0 14%;
+      font-weight: bold; }
+    .settings .username-input input {
+      border: none;
+      flex: 0 0 84%;
+      padding: calc(15px / 3) 15px;
+      border-bottom: 1px solid #000;
+      box-sizing: border-box; }
+  .settings ul.wallpapers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 0;
+    list-style-type: none; }
+    .settings ul.wallpapers li {
+      flex: 0 0 48%; }
+      .settings ul.wallpapers li img {
+        width: 100%;
+        border-radius: 5px; }
 
 .settings,
 .settings:target + .backdrop {

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-1.jpg");
+  background-size: cover;
   font-family: "Open Sans", sans-serif;
   margin: 0; }
   body main {
@@ -15,7 +16,7 @@ body {
   font-size: 5.5em;
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.75);
   padding: 15px;
-  margin: 30vh auto 10vh;
+  margin: 20vh auto 10vh;
   border-radius: 5px;
   width: 350px;
   height: 116px;
@@ -39,6 +40,13 @@ body {
     width: 80%;
     box-sizing: border-box;
     outline: 0; }
+
+#settings-button {
+  color: #fff;
+  font-size: 1.5em;
+  display: block;
+  text-align: right;
+  padding: 15px; }
 
 .github-repositories {
   display: flex;

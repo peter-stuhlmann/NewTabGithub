@@ -1,5 +1,6 @@
 body {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background-1.jpg');
+    background-size: cover;
     font-family: $primaryFont;
     margin: 0;
     
@@ -16,7 +17,7 @@ body {
     font-size: 5.5em;
     text-shadow: $textShadow;
     padding: $padding;
-    margin: 30vh auto 10vh;
+    margin: 20vh auto 10vh;
     border-radius: $borderRadius;
     width: 350px;
     height: 116px;
@@ -45,4 +46,12 @@ body {
         box-sizing: border-box;
         outline: 0
     }
+}
+
+#settings-button {
+    color: $primaryColor;
+    font-size: 1.5em;
+    display: block;
+    text-align: right;
+    padding: $padding
 }

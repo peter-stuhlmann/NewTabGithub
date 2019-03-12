@@ -1,0 +1,31 @@
+$scrollbar-size : 15px;
+$scrollbar-track : $secondaryColor;
+$scrollbar-thumb : gray;
+
+::-webkit-scrollbar {
+    width: $scrollbar-size;
+    height: $scrollbar-size;
+    background: $scrollbar-track;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scrollbar-thumb;
+    border-radius: $scrollbar-size / 2;
+
+    &:hover {
+        background: darken($scrollbar-thumb, 2%);
+    }
+
+    &:active {
+        background: darken($scrollbar-thumb, 5%);
+    }
+
+}
+
+::-webkit-scrollbar-corner {
+    background: $scrollbar-thumb;
+}
+
+::-webkit-resizer {
+    background: $scrollbar-thumb;
+}

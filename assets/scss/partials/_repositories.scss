@@ -5,11 +5,13 @@
     padding: $padding;
     position: absolute;
     bottom: 0;
+    width: 100%;
     overflow-x: scroll;
+    box-sizing: border-box;
 
     .repo {
-        flex: 0 0 19%;
-        background-color: $primaryColor;
+        flex: 0 0 350px;
+        background-color: $quaternyColor;
         border-radius: $borderRadius;
         padding: $padding;
         margin: calc(#{$margin} / 2);

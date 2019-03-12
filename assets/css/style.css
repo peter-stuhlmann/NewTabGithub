@@ -48,13 +48,34 @@ body {
   padding: 15px;
   position: absolute;
   bottom: 0;
-  overflow-x: scroll; }
+  width: 100%;
+  overflow-x: scroll;
+  box-sizing: border-box; }
   .github-repositories .repo {
-    flex: 0 0 19%;
-    background-color: #fff;
+    flex: 0 0 350px;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     padding: 15px;
     margin: calc(15px / 2);
     box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  background: #000; }
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 7.5px; }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7b7b7b; }
+  ::-webkit-scrollbar-thumb:active {
+    background: #737373; }
+
+::-webkit-scrollbar-corner {
+  background: gray; }
+
+::-webkit-resizer {
+  background: gray; }
 
 /*# sourceMappingURL=style.css.map */

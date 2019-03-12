@@ -12,7 +12,7 @@ class github {
 
         let username = document.querySelector('#username-input').value || 'peter-stuhlmann'
 
-        fetch(`https://api.github.com/users/${username}/repos?client_id=25bb194b081525d08147&client_secret=85f00c5312adc3596dbbc4c15ae7db009e99f9e5`)
+        fetch(`https://api.github.com/users/${username}/repos?sort=created&order=desc?client_id=25bb194b081525d08147&client_secret=85f00c5312adc3596dbbc4c15ae7db009e99f9e5`)
             .then(
                 response => response.json()
             )

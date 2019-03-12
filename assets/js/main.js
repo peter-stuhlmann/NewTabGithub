@@ -34,16 +34,21 @@ class github {
 
     template() {
         let repoList = []
-        this.viewData.forEach(repo =>
+        this.viewData.forEach(repo => {
+
+            if (repo.description == null) {
+                repo.description = ""
+            }
+
             repoList.push(`
-                                <div class="repo">
-                                    <a class="name" title="Redirect to github.com" target="_blanc" href="${repo.html_url}">${repo.name}</a><br>
-                                    <span class="description">${repo.description}</span><br>
-                                    <span><i class="fas fa-star">&nbsp;</i>${repo.stargazers_count}</span>
-                                    <span><i class="fas fa-code-branch">&nbsp;</i>${repo.forks}</span>
-                                </div>                    
-                            `)
-        )
+                <div class="repo">
+                    <a class="name" title="Redirect to github.com" target="_blanc" href="${repo.html_url}">${repo.name}</a><br>
+                    <span class="description">${repo.description}</span><br>
+                    <span><i class="fas fa-star">&nbsp;</i>${repo.stargazers_count}</span>
+                    <span><i class="fas fa-code-branch">&nbsp;</i>${repo.forks}</span>
+                </div>                    
+            `)
+        })
         document.querySelector('.github-repositories').innerHTML = repoList.join('')
 
     }
@@ -76,13 +81,7 @@ setInterval(function () {
     document.querySelector("#currentTime").innerHTML = currentTime
 }, interval);
 
-
-function gitRepoFilter() {
-
-}
-
 const api = new github
-
 
 
 function background() {

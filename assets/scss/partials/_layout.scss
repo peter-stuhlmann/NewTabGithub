@@ -4,7 +4,7 @@ body {
     background-position: top center;
     font-family: $primaryFont;
     margin: 0;
-    
+
     main {
         width: 100%;
         max-width: $desktop;
@@ -38,7 +38,7 @@ body {
         font-size: 2em;
         max-width: calc(#{$margin} * 3)
     }
-    
+
     input {
         padding: $padding;
         background-color: transparent;
@@ -46,5 +46,25 @@ body {
         width: 80%;
         box-sizing: border-box;
         outline: 0
+    }
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: right;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+
+    li {
+        display: inline;
+        margin-left: $margin;
+
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            text-shadow: $textShadow
+        }
     }
 }

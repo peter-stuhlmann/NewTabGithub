@@ -67,6 +67,9 @@ class github {
     }
 }
 
+
+document.body.style.backgroundImage = localStorage.getItem("background-image");
+
 let interval = 1000;
 
 setInterval(function () {
@@ -80,3 +83,12 @@ function gitRepoFilter() {
 }
 
 const api = new github
+
+
+
+function background() {
+    let backgroundSelection = document.querySelector('input[type=radio]:checked').value
+    localStorage.setItem("background-image", `url('assets/img/background-${backgroundSelection}.jpg')`);
+    document.body.style.backgroundImage = localStorage.getItem("background-image");
+}
+document.querySelector('#bg-select-button').addEventListener("click", background)

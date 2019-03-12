@@ -68,7 +68,8 @@
             flex: 0 0 84%;
             padding: calc(#{$padding} / 3) $padding;
             border-bottom: 1px solid $secondaryColor;
-            box-sizing: border-box
+            box-sizing: border-box;
+            outline: 0
         }
     }
 

@@ -93,16 +93,27 @@ document.querySelector('#bg-select-button').addEventListener("click", background
 
 
 
-function weather_api() {
+function getZipCode() {
+    let zipCode = document.querySelector('#zipCodeInput').value || '10367'
+    localStorage.setItem("zip-code", `${zipCode}`);
+    zipCode = localStorage.getItem("zip-code");
+    return zipCode
+}
+document.querySelector('#zip-button').addEventListener("click", () => {weather_api(zipCode)})
+
+let zipCode = getZipCode()
+
+
+
+function weather_api(zip) {
     
-    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=10367,de&units=metric&appid=6ae8d6fa95479985fa2f3d6c41820fbd`)
+    zip = getZipCode()
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},de&units=metric&appid=6ae8d6fa95479985fa2f3d6c41820fbd`)
         .then(
             response => response.json()
         )
         .then(
             weather => {
-                
-                console.log(weather)
                 let weatherData = [];
                 weatherData.push(`
                     <strong>Weather in ${weather.name}:</strong><br>
@@ -123,4 +134,4 @@ function weather_api() {
             err => console.log(`panic: ${err}`)
         )
 }
-weather_api()
+weather_api(zipCode)

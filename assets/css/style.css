@@ -148,20 +148,25 @@ footer {
       height: 100%;
       z-index: 15;
       background-color: rgba(0, 0, 0, 0.8); }
-  .settings .username-input {
+  .settings .username-input,
+  .settings .zip-input {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
-    .settings .username-input span {
+    .settings .username-input span,
+    .settings .zip-input span {
       flex: 0 0 14%;
       font-weight: bold; }
-    .settings .username-input input {
+    .settings .username-input input,
+    .settings .zip-input input {
       border: none;
       flex: 0 0 84%;
       padding: calc(15px / 3) 15px;
       border-bottom: 1px solid #000;
       box-sizing: border-box;
       outline: 0; }
+  .settings .zip-input {
+    margin: calc(15px * 2) 0 15px 0; }
   .settings ul.wallpapers {
     display: flex;
     flex-flow: row wrap;

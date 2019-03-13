@@ -235,4 +235,11 @@ footer {
     background-color: #000;
     color: #fff; }
 
+#close-notes {
+  position: absolute;
+  top: 130px;
+  left: 183px;
+  font-size: 0.8em;
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

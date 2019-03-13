@@ -138,6 +138,13 @@ function weather_api(zip) {
 weather_api(zipCode)
 
 
+document.querySelector('#zipCodeInput').addEventListener('keypress', (e) => {
+    if (e.keyCode === 13) {
+        weather_api(zipCode)
+    }
+});
+
+
 
 document.querySelector('#note').innerHTML = localStorage.getItem("note")
 

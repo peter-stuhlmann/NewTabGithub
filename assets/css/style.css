@@ -206,4 +206,33 @@ footer {
     #weather .weather .weather-data {
       flex: 0 0 58%; }
 
+#note {
+  position: absolute;
+  left: 30px;
+  top: 130px;
+  width: 200px;
+  max-width: 200px;
+  height: 200px;
+  max-height: 200px;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  outline: 0; }
+
+#note-submit {
+  position: absolute;
+  top: 313px;
+  left: 190px;
+  border: 0;
+  border-radius: 5px 0 5px 0;
+  background-color: #fff;
+  color: #000;
+  outline: 0; }
+  #note-submit:hover {
+    transition: 0.2s;
+    background-color: #000;
+    color: #fff; }
+
 /*# sourceMappingURL=style.css.map */

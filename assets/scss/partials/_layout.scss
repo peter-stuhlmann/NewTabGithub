@@ -1,9 +1,10 @@
 body {
     background-image: url('../img/background-1.jpg');
-    background-size: cover auto;
+    background-size: cover;
     background-position: top center;
     font-family: $primaryFont;
     margin: 0;
+    background-attachment: fixed;
 
     main {
         width: 100%;

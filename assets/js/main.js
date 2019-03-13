@@ -134,3 +134,15 @@ function weather_api(zip) {
         )
 }
 weather_api(zipCode)
+
+
+
+document.querySelector('#note').innerHTML = localStorage.getItem("note")
+
+function notes() {
+    let noteText = document.querySelector('#note').value
+    localStorage.setItem("note", noteText);
+    console.log(noteText)
+    document.querySelector('#note').innerHTML = noteText
+}
+document.querySelector('#note-submit').addEventListener("click", notes)

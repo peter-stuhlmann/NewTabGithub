@@ -174,8 +174,12 @@ footer {
     margin: 15px 0;
     padding: 0;
     list-style-type: none; }
+    .settings ul.wallpapers input {
+      position: relative;
+      top: -26px; }
     .settings ul.wallpapers li {
-      flex: 0 0 48%; }
+      flex: 0 0 48%;
+      margin-bottom: -15px; }
       .settings ul.wallpapers li img {
         width: 100%;
         border-radius: 5px; }

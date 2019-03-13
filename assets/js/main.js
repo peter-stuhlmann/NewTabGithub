@@ -107,9 +107,11 @@ function weather_api() {
                 weatherData.push(`
                     <strong>Weather in ${weather.name}:</strong><br>
                     <div class="weather">
-                        <img src="http://openweathermap.org/img/w/${weather.weather[0].icon}.png">
+                        <div class="weather-icon">
+                            <img src="http://openweathermap.org/img/w/${weather.weather[0].icon}.png">
+                        </div>
                         <div class="weather-data">
-                            <span>${weather.weather[0].main}</span>
+                            <span>${weather.weather[0].main}</span><br>
                             <span>${weather.main.temp}°C</span>
                         </div>
                     </div>

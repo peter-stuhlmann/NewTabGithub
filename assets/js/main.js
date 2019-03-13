@@ -94,9 +94,8 @@ document.querySelector('#bg-select-button').addEventListener("click", background
 
 
 function getZipCode() {
-    let zipCode = document.querySelector('#zipCodeInput').value || '10367'
+    let zipCode = document.querySelector('#zipCodeInput').value || localStorage.getItem("zip-code") || '14662'
     localStorage.setItem("zip-code", `${zipCode}`);
-    zipCode = localStorage.getItem("zip-code");
     return zipCode
 }
 document.querySelector('#zip-button').addEventListener("click", () => {weather_api(zipCode)})

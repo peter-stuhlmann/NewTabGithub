@@ -89,7 +89,7 @@ function background() {
     localStorage.setItem("background-image", `url('assets/img/background-${backgroundSelection}.jpg')`);
     document.body.style.backgroundImage = localStorage.getItem("background-image");
 }
-document.querySelector('#bg-select-button').addEventListener("click", background)
+document.querySelectorAll('.wallpapers label').forEach(element => element.addEventListener("change", background))
 
 
 

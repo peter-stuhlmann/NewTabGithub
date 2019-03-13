@@ -98,9 +98,11 @@ function getZipCode() {
     localStorage.setItem("zip-code", `${zipCode}`);
     return zipCode
 }
-document.querySelector('#zip-button').addEventListener("click", () => {
-    weather_api(zipCode)
-})
+document.querySelector('#zipCodeInput').addEventListener('keypress', (e) => {
+    if (e.keyCode === 13) {
+        weather_api(zipCode)
+    }
+});
 
 let zipCode = getZipCode()
 
@@ -136,13 +138,6 @@ function weather_api(zip) {
         )
 }
 weather_api(zipCode)
-
-
-document.querySelector('#zipCodeInput').addEventListener('keypress', (e) => {
-    if (e.keyCode === 13) {
-        weather_api(zipCode)
-    }
-});
 
 
 

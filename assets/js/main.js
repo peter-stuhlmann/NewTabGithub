@@ -90,3 +90,35 @@ function background() {
     document.body.style.backgroundImage = localStorage.getItem("background-image");
 }
 document.querySelector('#bg-select-button').addEventListener("click", background)
+
+
+
+function weather_api() {
+    
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=10367,de&units=metric&appid=6ae8d6fa95479985fa2f3d6c41820fbd`)
+        .then(
+            response => response.json()
+        )
+        .then(
+            weather => {
+                
+                console.log(weather)
+                let weatherData = [];
+                weatherData.push(`
+                    <strong>Weather in ${weather.name}:</strong><br>
+                    <div class="weather">
+                        <img src="http://openweathermap.org/img/w/${weather.weather[0].icon}.png">
+                        <div class="weather-data">
+                            <span>${weather.weather[0].main}</span>
+                            <span>${weather.main.temp}°C</span>
+                        </div>
+                    </div>
+            `)
+                document.querySelector('#weather').innerHTML = weatherData.join('')
+            },
+        )
+        .catch(
+            err => console.log(`panic: ${err}`)
+        )
+}
+weather_api()

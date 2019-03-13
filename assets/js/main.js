@@ -98,14 +98,16 @@ function getZipCode() {
     localStorage.setItem("zip-code", `${zipCode}`);
     return zipCode
 }
-document.querySelector('#zip-button').addEventListener("click", () => {weather_api(zipCode)})
+document.querySelector('#zip-button').addEventListener("click", () => {
+    weather_api(zipCode)
+})
 
 let zipCode = getZipCode()
 
 
 
 function weather_api(zip) {
-    
+
     zip = getZipCode()
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},de&units=metric&appid=6ae8d6fa95479985fa2f3d6c41820fbd`)
         .then(
@@ -146,3 +148,11 @@ function notes() {
     document.querySelector('#note').innerHTML = noteText
 }
 document.querySelector('#note-submit').addEventListener("click", notes)
+
+
+function closeNotes() {
+    document.querySelector('#note').style.display = 'none';
+    document.querySelector('#note-submit').style.display = 'none';
+    document.querySelector('#close-notes').style.display = 'none';
+}
+document.querySelector('#close-notes').addEventListener("click", closeNotes)

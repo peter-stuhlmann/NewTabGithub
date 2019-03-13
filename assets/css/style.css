@@ -179,4 +179,22 @@ footer {
 .settings:target + .backdrop {
   position: fixed; }
 
+#weather {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: calc(15px / 3) 15px;
+  box-sizing: border-box; }
+  #weather .weather {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box; }
+    #weather .weather .weather-icon {
+      flex: 0 0 40%; }
+    #weather .weather .weather-data {
+      flex: 0 0 58%; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+#weather {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: $quaternyColor;
+    border-radius: 5px;
+    padding: calc(#{$padding} / 3) $padding;
+    box-sizing: border-box;
+
+    .weather {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .weather-icon {
+            flex: 0 0 40%
+        }
+
+        .weather-data {
+            flex: 0 0 58%
+        }
+    }
+}
